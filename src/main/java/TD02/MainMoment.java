@@ -13,8 +13,11 @@ public class MainMoment {
     public static void main(String[] args) {
         Moment moment1 = new Moment(11,23,55);
         Moment moment2 = new Moment(23,11,25);
-        Moment moment3 = new Moment(6,14,21);
-        System.out.println(moment1);
+        Moment moment3 = new Moment(6,14,55);
+        System.out.println(moment3);
+        System.out.println(moment2);
+        System.out.println(moment3.getHour() +" " + moment3.getMinute() + " " +  moment3.getSecond());
+        
         
     }
 }
