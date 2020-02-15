@@ -11,13 +11,14 @@ package TD02;
  */
 public class MainMoment {
     public static void main(String[] args) {
-        Moment moment1 = new Moment(11,23,55);
-        Moment moment2 = new Moment(23,11,25);
-        Moment moment3 = new Moment(6,14,55);
-        System.out.println(moment3);
-        System.out.println(moment2);
-        System.out.println(moment3.getHour() +" " + moment3.getMinute() + " " +  moment3.getSecond());
-        
-        
+        Moment moment1 = new Moment(8,15,0);
+        Moment moment2 = new Moment(8,15,0);
+        Moment moment3 = moment1;
+        Moment moment4 = new Moment(10,15,0);
+        Moment moment5 = new Moment();
+        System.out.println(moment1 + "==" + moment2 + ": " + moment1.equals(moment2));
+        System.out.println(moment1 + "==" + moment2 + ": " + moment1.equals(moment4));
+        System.out.println(moment5.toString());
+        System.out.println(moment1.compareTo(moment4));
     }
 }

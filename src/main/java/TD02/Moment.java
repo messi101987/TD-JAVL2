@@ -32,6 +32,12 @@ public class Moment {
         this.second = second;
     }
     
+    public Moment(){
+        this.hour = 0;
+        this.minute = 0;
+        this.second = 0;
+    }
+    
     public int getHour() {
         return hour;
     }
@@ -44,5 +50,23 @@ public class Moment {
     
     public String toString() {
         return String.format("%02d:%02d:%02d", hour, minute, second);
+    }
+    
+    public boolean equals(Moment other){
+        return this.hour == other.hour && this.minute == other.minute && this.second == other.second ; 
+    }
+    
+    public int toSeconds(){
+        return (this.hour * 3600) + (this.minute * 60) + this.second;
+    }
+    
+    public int compareTo(Moment other){
+        int positive = -1;
+        if (this.toSeconds() == other.toSeconds()){
+            positive = 0;
+        } else if (this.toSeconds() > other.toSeconds()){
+            positive = 1;
+        }
+        return positive;
     }
 }
