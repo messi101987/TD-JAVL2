@@ -30,5 +30,9 @@ public class Nombres {
      void concatenation (List<Integer> liste){
          TdListes.concatanation(nombres, liste);
      }
+     
+     void supprimerExtr(){
+         TdListes.supprimerExtremum(nombres);
+     }
     
 }

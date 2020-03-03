@@ -25,5 +25,7 @@ public class main {
         listeAjout.add(33);
         instance.concatenation(listeAjout);
         System.out.println(instance.nombres);
+        instance.supprimerExtr();
+        System.out.println(instance.nombres);
     }
 }

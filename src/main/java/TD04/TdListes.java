@@ -41,4 +41,19 @@ public class TdListes {
         }
     }
     
+    public static void supprimerExtremum(List <Integer> liste) {
+        int min = 0;
+        int max = 0;
+        for(int i = 1;i < liste.size();i++) {
+            if (liste.get(i) < liste.get(min)) {
+                min = i;
+            }
+            if (liste.get(i) > liste.get(max)){
+                max = i;
+            }
+            liste.remove(min);
+            liste.remove(max);
+        }
+
+    }
 }
