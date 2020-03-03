@@ -35,5 +35,10 @@ public class TdListes {
         return somme;
     }
     
-    public static 
+    public static void concatanation (List<Integer> liste1, List<Integer> liste2) {
+        for(int elt:liste2) {
+            liste1.add(elt);
+        }
+    }
+    
 }

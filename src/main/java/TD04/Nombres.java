@@ -26,5 +26,9 @@ public class Nombres {
      int sum() {
          return TdListes.sommeElements(nombres);
      }
+     
+     void concatenation (List<Integer> liste){
+         TdListes.concatanation(nombres, liste);
+     }
     
 }

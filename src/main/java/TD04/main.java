@@ -5,6 +5,9 @@
  */
 package TD04;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author g55315
@@ -15,6 +18,12 @@ public class main {
         System.out.println(list.list);
         Nombres instance = new Nombres();
         instance.add(4);
+        instance.add(5);
+        System.out.println(instance.nombres);
+        List<Integer> listeAjout= new ArrayList();
+        listeAjout.add(5);
+        listeAjout.add(33);
+        instance.concatenation(listeAjout);
         System.out.println(instance.nombres);
     }
 }
