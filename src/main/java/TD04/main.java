@@ -11,7 +11,10 @@ package TD04;
  */
 public class main {
     public static void main(String[] args) {
-        ex1 list = new ex1();
-        System.out.println(list);
+        TdListes list = new TdListes();
+        System.out.println(list.list);
+        Nombres instance = new Nombres();
+        instance.add(4);
+        System.out.println(instance.nombres);
     }
 }

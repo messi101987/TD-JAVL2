@@ -15,5 +15,8 @@ public class GameMain {
         Card carte2 = new Card(5);
         System.out.println(carte1.equals(carte2));
         System.out.println(carte1.getValue());
+        Game game1 = new Game(10);
+        game1.shuffle();
+        System.out.println(game1);
     }
 }
