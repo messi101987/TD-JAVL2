@@ -15,6 +15,8 @@ import java.util.List;
 public class main {
     public static void main(String[] args) {
         TdListes list = new TdListes();
+        List<Integer> liste1 = new ArrayList<>(List.of(1, 5, 8, 10));
+        List<Integer> liste2 = new ArrayList<>(List.of(1, 4, 9, 12 , 55, 66));
         System.out.println(list.list);
         Nombres instance = new Nombres();
         instance.add(4);
@@ -23,9 +25,10 @@ public class main {
         List<Integer> listeAjout= new ArrayList();
         listeAjout.add(5);
         listeAjout.add(33);
+        listeAjout.add(33);
+        listeAjout.add(33);
         instance.concatenation(listeAjout);
         System.out.println(instance.nombres);
-        instance.supprimerExtr();
-        System.out.println(instance.nombres);
+        System.out.println(TdListes.fusionTrié(liste1, liste2));
     }
 }

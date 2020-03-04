@@ -34,5 +34,8 @@ public class Nombres {
      void supprimerExtr(){
          TdListes.supprimerExtremum(nombres);
      }
-    
+     
+     void eliminerDoublons() {
+         TdListes.eliminerDoublons(nombres);
+     }  
 }
