@@ -3,16 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package TD06.color.v1;
+package TD06;
 
 /**
  *
- * @author otison
+ * @author oscartison
  */
-public class MainColor {
-
-    public static void main(String[] args) {
-        
-        System.out.println(Colorizer.color(Color.GREEN, "bonjour"));
-    }
+public enum Color {
+    RED,GREEN,BLUE;
 }
