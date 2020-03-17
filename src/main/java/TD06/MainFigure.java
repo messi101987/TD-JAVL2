@@ -11,8 +11,8 @@ package TD06;
  */
 public class MainFigure {
     public static void main(String[] args) {
-        Rectangle r1 = new Rectangle(55, 26);
-        Square s1 = new Square(10);
+        Rectangle r1 = new Rectangle(55, 55);
+        Square s1 = new Square(55);
         System.out.println(s1.getArea());
         Rectangle[] liste = {
             new Rectangle(20, 0.55),
@@ -23,6 +23,14 @@ public class MainFigure {
         for(Rectangle elt: liste){
             System.out.println(elt.getArea());
         }
+        System.out.println(s1.getSideByLength());
+
+        Square square = new Square(42);
+        Square square2 = new Square(42);
+        System.out.println(square.equals(square2));
+        Rectangle rectangle = new Rectangle(42, 42);
+        System.out.println(square.getClass() == rectangle.getClass());
+        System.out.println(square instanceof Rectangle);
     }
     
     
